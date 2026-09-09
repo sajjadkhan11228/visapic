@@ -2,13 +2,15 @@ const tools = [
   {
     icon: "📷",
     title: "Passport Photo",
-    description: "Full editor with country size, face detection, smart positioning and export.",
+    description:
+      "Full editor with country size, face detection, smart positioning and export.",
     href: "/passport-photo",
   },
   {
     icon: "🪪",
     title: "Passport Photo Maker",
-    description: "Simple country-based photo maker with crop and background controls.",
+    description:
+      "Simple country-based photo maker with crop and background controls.",
     href: "/passport-photo-maker",
   },
   {
@@ -102,14 +104,25 @@ export default function Home() {
     <main className="min-h-screen bg-white text-slate-900">
       <header className="sticky top-0 z-20 border-b border-slate-200 bg-white/95 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-          <a href="/" className="text-2xl font-bold tracking-tight">
-            Visa<span className="text-blue-600">Pic</span>
+          {/* VisaPic Logo */}
+          <a href="/" className="flex items-center">
+            <img
+              src="/visapic-logo.png"
+              alt="VisaPic - Passport & Visa Photo Tools"
+              className="h-12 w-auto object-contain"
+            />
           </a>
 
           <nav className="hidden items-center gap-7 text-sm font-semibold md:flex">
-            <a href="#tools" className="hover:text-blue-600">Tools</a>
-            <a href="#how-it-works" className="hover:text-blue-600">How It Works</a>
-            <a href="/about" className="hover:text-blue-600">About</a>
+            <a href="#tools" className="hover:text-blue-600">
+              Tools
+            </a>
+            <a href="#how-it-works" className="hover:text-blue-600">
+              How It Works
+            </a>
+            <a href="/about" className="hover:text-blue-600">
+              About
+            </a>
           </nav>
 
           <a
@@ -129,7 +142,9 @@ export default function Home() {
 
           <h1 className="mx-auto max-w-4xl text-4xl font-bold tracking-tight md:text-6xl">
             Create Passport & Visa Photos
-            <span className="block text-blue-600">Online in Minutes</span>
+            <span className="block text-blue-600">
+              Online in Minutes
+            </span>
           </h1>
 
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-600">
@@ -145,6 +160,7 @@ export default function Home() {
             >
               Create Passport Photo
             </a>
+
             <a
               href="#tools"
               className="rounded-xl border border-slate-300 bg-white px-7 py-4 font-semibold text-slate-700 hover:border-blue-400 hover:text-blue-600"
@@ -154,9 +170,20 @@ export default function Home() {
           </div>
 
           <div className="mx-auto mt-10 grid max-w-3xl grid-cols-1 gap-3 text-left sm:grid-cols-3">
-            <TrustItem title="Browser based" text="Your photo is processed locally by these tools." />
-            <TrustItem title="Country presets" text="Choose a configured document-photo format." />
-            <TrustItem title="JPG export" text="Download the generated result directly." />
+            <TrustItem
+              title="Browser based"
+              text="Your photo is processed locally by these tools."
+            />
+
+            <TrustItem
+              title="Country presets"
+              text="Choose a configured document-photo format."
+            />
+
+            <TrustItem
+              title="JPG export"
+              text="Download the generated result directly."
+            />
           </div>
         </div>
       </section>
@@ -164,9 +191,11 @@ export default function Home() {
       <section id="tools" className="mx-auto max-w-7xl px-6 py-20">
         <div className="mx-auto max-w-2xl text-center">
           <p className="font-semibold text-blue-600">ALL TOOLS</p>
+
           <h2 className="mt-3 text-3xl font-bold md:text-4xl">
             Everything in one place
           </h2>
+
           <p className="mt-4 text-slate-600">
             The main passport-photo editor connects the AI and editing
             features together. The other pages are focused standalone tools.
@@ -184,16 +213,36 @@ export default function Home() {
         <div className="mx-auto max-w-7xl">
           <div className="text-center">
             <p className="font-semibold text-blue-600">HOW IT WORKS</p>
+
             <h2 className="mt-3 text-3xl font-bold md:text-4xl">
               Create your photo in 4 steps
             </h2>
           </div>
 
           <div className="mt-12 grid gap-6 md:grid-cols-4">
-            <StepCard number="01" title="Upload" description="Choose a clear JPG, JPEG or PNG photo." />
-            <StepCard number="02" title="Detect" description="VisaPic can analyze the face automatically." />
-            <StepCard number="03" title="Edit" description="Crop, zoom, rotate and optionally remove the background." />
-            <StepCard number="04" title="Export" description="Create and download the country-sized JPG." />
+            <StepCard
+              number="01"
+              title="Upload"
+              description="Choose a clear JPG, JPEG or PNG photo."
+            />
+
+            <StepCard
+              number="02"
+              title="Detect"
+              description="VisaPic can analyze the face automatically."
+            />
+
+            <StepCard
+              number="03"
+              title="Edit"
+              description="Crop, zoom, rotate and optionally remove the background."
+            />
+
+            <StepCard
+              number="04"
+              title="Export"
+              description="Create and download the country-sized JPG."
+            />
           </div>
         </div>
       </section>
@@ -201,9 +250,11 @@ export default function Home() {
       <section className="mx-auto max-w-7xl px-6 py-20">
         <div className="text-center">
           <p className="font-semibold text-blue-600">COUNTRIES</p>
+
           <h2 className="mt-3 text-3xl font-bold md:text-4xl">
             Configured country presets
           </h2>
+
           <p className="mx-auto mt-4 max-w-2xl text-slate-600">
             Dimensions and compliance guidance are stored separately from the
             editor so the project can be expanded without duplicating logic.
@@ -225,12 +276,16 @@ export default function Home() {
 
       <section className="bg-slate-900 px-6 py-16 text-white">
         <div className="mx-auto max-w-4xl text-center">
-          <h2 className="text-3xl font-bold">Privacy-focused browser tools</h2>
+          <h2 className="text-3xl font-bold">
+            Privacy-focused browser tools
+          </h2>
+
           <p className="mt-4 leading-7 text-slate-300">
             Most image operations in this project are performed in the
             browser. Always review the exact official requirements before
             submitting a photo.
           </p>
+
           <a
             href="/passport-photo"
             className="mt-7 inline-flex rounded-xl bg-white px-6 py-3 font-bold text-slate-900 hover:bg-slate-100"
@@ -243,19 +298,35 @@ export default function Home() {
       <footer className="border-t border-slate-200 bg-white">
         <div className="mx-auto flex max-w-7xl flex-col gap-5 px-6 py-8 md:flex-row md:items-center md:justify-between">
           <div>
-            <div className="text-xl font-bold">
-              Visa<span className="text-blue-600">Pic</span>
-            </div>
+            <a href="/" className="inline-flex items-center">
+              <img
+                src="/visapic-logo.png"
+                alt="VisaPic"
+                className="h-10 w-auto object-contain"
+              />
+            </a>
+
             <p className="mt-1 text-sm text-slate-500">
               Passport & visa photo tools.
             </p>
           </div>
 
           <div className="flex flex-wrap gap-5 text-sm text-slate-500">
-            <a href="/about" className="hover:text-blue-600">About</a>
-            <a href="/privacy" className="hover:text-blue-600">Privacy</a>
-            <a href="/terms" className="hover:text-blue-600">Terms</a>
-            <a href="/contact" className="hover:text-blue-600">Contact</a>
+            <a href="/about" className="hover:text-blue-600">
+              About
+            </a>
+
+            <a href="/privacy" className="hover:text-blue-600">
+              Privacy
+            </a>
+
+            <a href="/terms" className="hover:text-blue-600">
+              Terms
+            </a>
+
+            <a href="/contact" className="hover:text-blue-600">
+              Contact
+            </a>
           </div>
         </div>
       </footer>
@@ -282,9 +353,18 @@ function ToolCard({
       <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-blue-50 text-2xl">
         {icon}
       </div>
-      <h3 className="mt-5 text-xl font-bold group-hover:text-blue-600">{title}</h3>
-      <p className="mt-3 text-sm leading-6 text-slate-600">{description}</p>
-      <div className="mt-5 text-sm font-semibold text-blue-600">Open tool →</div>
+
+      <h3 className="mt-5 text-xl font-bold group-hover:text-blue-600">
+        {title}
+      </h3>
+
+      <p className="mt-3 text-sm leading-6 text-slate-600">
+        {description}
+      </p>
+
+      <div className="mt-5 text-sm font-semibold text-blue-600">
+        Open tool →
+      </div>
     </a>
   );
 }
@@ -301,17 +381,28 @@ function StepCard({
   return (
     <div className="rounded-2xl border border-slate-200 bg-white p-7 shadow-sm">
       <div className="text-4xl font-bold text-blue-600">{number}</div>
+
       <h3 className="mt-5 text-xl font-bold">{title}</h3>
+
       <p className="mt-3 leading-7 text-slate-600">{description}</p>
     </div>
   );
 }
 
-function TrustItem({ title, text }: { title: string; text: string }) {
+function TrustItem({
+  title,
+  text,
+}: {
+  title: string;
+  text: string;
+}) {
   return (
     <div className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
       <div className="font-bold text-slate-900">{title}</div>
-      <div className="mt-1 text-sm leading-5 text-slate-500">{text}</div>
+
+      <div className="mt-1 text-sm leading-5 text-slate-500">
+        {text}
+      </div>
     </div>
   );
 }
