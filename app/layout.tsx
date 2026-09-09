@@ -25,9 +25,9 @@ export const metadata: Metadata = {
   applicationName: "VisaPic",
 
   icons: {
-    icon: "/visapic-logo.png",
-    shortcut: "/visapic-logo.png",
-    apple: "/visapic-logo.png",
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
   },
 
   keywords: [
