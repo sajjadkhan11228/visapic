@@ -33,7 +33,6 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
-
   verification: {
     google: "rtodlz94CZn0IbwKXp5Gq_VPtUpwhAhqi6f9iNCQAq8",
   },
@@ -49,7 +48,17 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} antialiased`}
     >
-      <body className="min-h-screen bg-white text-slate-900">{children}</body>
+      <head>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7737371953038441"
+          crossOrigin="anonymous"
+        />
+      </head>
+
+      <body className="min-h-screen bg-white text-slate-900">
+        {children}
+      </body>
     </html>
   );
 }
