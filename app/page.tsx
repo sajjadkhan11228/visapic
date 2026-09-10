@@ -1,3 +1,5 @@
+import AdsterraBanner from "./components/AdsterraBanner";
+
 const tools = [
   {
     icon: "📷",
@@ -16,73 +18,85 @@ const tools = [
   {
     icon: "📐",
     title: "Passport Photo Size",
-    description: "Generate a photo at a selected physical size and DPI.",
+    description:
+      "Generate a photo at a selected physical size and DPI.",
     href: "/passport-photo-size",
   },
   {
     icon: "🖨️",
     title: "Passport Photo Sheet",
-    description: "Arrange multiple photos on A4 or 4×6 paper.",
+    description:
+      "Arrange multiple photos on A4 or 4×6 paper.",
     href: "/passport-photo-sheet",
   },
   {
     icon: "✂️",
     title: "Image Cropper",
-    description: "Crop, rotate and resize the framing of an image.",
+    description:
+      "Crop, rotate and resize the framing of an image.",
     href: "/image-cropper",
   },
   {
     icon: "↔️",
     title: "Image Resizer",
-    description: "Resize images with presets or custom dimensions.",
+    description:
+      "Resize images with presets or custom dimensions.",
     href: "/image-resizer",
   },
   {
     icon: "🗜️",
     title: "Image Compressor",
-    description: "Reduce JPG size to a target file-size range.",
+    description:
+      "Reduce JPG size to a target file-size range.",
     href: "/image-compressor",
   },
   {
     icon: "📉",
     title: "Image Size Reducer",
-    description: "Reduce image dimensions and file size in your browser.",
+    description:
+      "Reduce image dimensions and file size in your browser.",
     href: "/image-size-reducer",
   },
   {
     icon: "🔄",
     title: "JPG to PNG",
-    description: "Convert JPG, JPEG, WebP or BMP images to PNG.",
+    description:
+      "Convert JPG, JPEG, WebP or BMP images to PNG.",
     href: "/jpg-to-png",
   },
   {
     icon: "🖼️",
     title: "Image to JPG",
-    description: "Convert images to JPG with a selectable background.",
+    description:
+      "Convert images to JPG with a selectable background.",
     href: "/image-to-jpg",
   },
   {
     icon: "🎨",
     title: "Background Changer",
-    description: "Prepare a photo with a selected background color.",
+    description:
+      "Prepare a photo with a selected background color.",
     href: "/background-changer",
   },
   {
     icon: "📄",
     title: "Photo to PDF",
-    description: "Turn an image into a printable PDF.",
+    description:
+      "Turn an image into a printable PDF.",
     href: "/photo-to-pdf",
   },
   {
     icon: "📏",
     title: "DPI Converter",
-    description: "Calculate physical size and export dimensions from DPI.",
+    description:
+      "Calculate physical size and export dimensions from DPI.",
     href: "/dpi-converter",
   },
   {
     icon: "🖨️",
     title: "Photo Print Sheet",
-    description: "Create a printable sheet with repeated passport photos.",
+    description:
+      "Create a printable sheet with repeated passport photos.",
     href: "/photo-print-sheet",
   },
 ];
@@ -117,9 +131,11 @@ export default function Home() {
             <a href="#tools" className="hover:text-blue-600">
               Tools
             </a>
+
             <a href="#how-it-works" className="hover:text-blue-600">
               How It Works
             </a>
+
             <a href="/about" className="hover:text-blue-600">
               About
             </a>
@@ -134,6 +150,7 @@ export default function Home() {
         </div>
       </header>
 
+      {/* HERO */}
       <section className="bg-slate-50">
         <div className="mx-auto max-w-7xl px-6 py-20 text-center md:py-28">
           <div className="mx-auto mb-6 inline-flex rounded-full border border-blue-100 bg-blue-50 px-4 py-2 text-sm font-semibold text-blue-700">
@@ -185,12 +202,18 @@ export default function Home() {
               text="Download the generated result directly."
             />
           </div>
+
+          {/* AD 1 */}
+          <AdsterraBanner />
         </div>
       </section>
 
+      {/* TOOLS */}
       <section id="tools" className="mx-auto max-w-7xl px-6 py-20">
         <div className="mx-auto max-w-2xl text-center">
-          <p className="font-semibold text-blue-600">ALL TOOLS</p>
+          <p className="font-semibold text-blue-600">
+            ALL TOOLS
+          </p>
 
           <h2 className="mt-3 text-3xl font-bold md:text-4xl">
             Everything in one place
@@ -202,6 +225,9 @@ export default function Home() {
           </p>
         </div>
 
+        {/* AD 2 */}
+        <AdsterraBanner />
+
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {tools.map((tool) => (
             <ToolCard key={tool.href} {...tool} />
@@ -209,10 +235,16 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="how-it-works" className="bg-slate-50 px-6 py-20">
+      {/* HOW IT WORKS */}
+      <section
+        id="how-it-works"
+        className="bg-slate-50 px-6 py-20"
+      >
         <div className="mx-auto max-w-7xl">
           <div className="text-center">
-            <p className="font-semibold text-blue-600">HOW IT WORKS</p>
+            <p className="font-semibold text-blue-600">
+              HOW IT WORKS
+            </p>
 
             <h2 className="mt-3 text-3xl font-bold md:text-4xl">
               Create your photo in 4 steps
@@ -247,9 +279,12 @@ export default function Home() {
         </div>
       </section>
 
+      {/* COUNTRIES */}
       <section className="mx-auto max-w-7xl px-6 py-20">
         <div className="text-center">
-          <p className="font-semibold text-blue-600">COUNTRIES</p>
+          <p className="font-semibold text-blue-600">
+            COUNTRIES
+          </p>
 
           <h2 className="mt-3 text-3xl font-bold md:text-4xl">
             Configured country presets
@@ -272,8 +307,12 @@ export default function Home() {
             </a>
           ))}
         </div>
+
+        {/* AD 3 */}
+        <AdsterraBanner />
       </section>
 
+      {/* PRIVACY / CTA */}
       <section className="bg-slate-900 px-6 py-16 text-white">
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="text-3xl font-bold">
@@ -295,6 +334,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* FOOTER */}
       <footer className="border-t border-slate-200 bg-white">
         <div className="mx-auto flex max-w-7xl flex-col gap-5 px-6 py-8 md:flex-row md:items-center md:justify-between">
           <div>
@@ -312,19 +352,31 @@ export default function Home() {
           </div>
 
           <div className="flex flex-wrap gap-5 text-sm text-slate-500">
-            <a href="/about" className="hover:text-blue-600">
+            <a
+              href="/about"
+              className="hover:text-blue-600"
+            >
               About
             </a>
 
-            <a href="/privacy" className="hover:text-blue-600">
+            <a
+              href="/privacy"
+              className="hover:text-blue-600"
+            >
               Privacy
             </a>
 
-            <a href="/terms" className="hover:text-blue-600">
+            <a
+              href="/terms"
+              className="hover:text-blue-600"
+            >
               Terms
             </a>
 
-            <a href="/contact" className="hover:text-blue-600">
+            <a
+              href="/contact"
+              className="hover:text-blue-600"
+            >
               Contact
             </a>
           </div>
@@ -380,11 +432,17 @@ function StepCard({
 }) {
   return (
     <div className="rounded-2xl border border-slate-200 bg-white p-7 shadow-sm">
-      <div className="text-4xl font-bold text-blue-600">{number}</div>
+      <div className="text-4xl font-bold text-blue-600">
+        {number}
+      </div>
 
-      <h3 className="mt-5 text-xl font-bold">{title}</h3>
+      <h3 className="mt-5 text-xl font-bold">
+        {title}
+      </h3>
 
-      <p className="mt-3 leading-7 text-slate-600">{description}</p>
+      <p className="mt-3 leading-7 text-slate-600">
+        {description}
+      </p>
     </div>
   );
 }
@@ -398,7 +456,9 @@ function TrustItem({
 }) {
   return (
     <div className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
-      <div className="font-bold text-slate-900">{title}</div>
+      <div className="font-bold text-slate-900">
+        {title}
+      </div>
 
       <div className="mt-1 text-sm leading-5 text-slate-500">
         {text}
